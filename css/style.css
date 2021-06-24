@@ -47,23 +47,22 @@ header {
   width: 100%;
   margin: 0;
 }
-.lobby .titulo h1 {
-  font-size: h1;
-  font-size: 3rem;
-  color: h1;
-  color: white;
+.lobby .titulo .tituloPrincipal {
+  color: #000;
+  font-size: 4rem;
   text-align: center;
   margin-top: 3rem;
   font-weight: 800;
+  font-family: "Nunito", sans-serif;
 }
 @media (max-width: 992px) {
-  .lobby .titulo h1 {
+  .lobby .titulo .tituloPrincipal {
     font-size: 2rem;
     margin-top: 1rem;
   }
 }
 @media (max-width: 556px) {
-  .lobby .titulo h1 {
+  .lobby .titulo .tituloPrincipal {
     font-size: 2rem;
     padding: 2rem;
   }
@@ -331,8 +330,8 @@ header {
 .fondoAgenda h1 {
   text-align: center;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
   font-size: h1;
   font-size: 3rem;
   color: h1;
@@ -350,6 +349,7 @@ header {
 }
 .fondoAgenda .agenda {
   width: 70%;
+  margin-top: 4rem;
   padding: 1rem;
   font-size: 1.5rem;
   margin: textos;
