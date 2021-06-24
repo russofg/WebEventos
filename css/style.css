@@ -1,0 +1,809 @@
+@import "//scss/base/condicion";
+* {
+  font-family: "Nunito", sans-serif;
+  font-display: swap;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: deeppink;
+}
+@media (max-width: 992px) {
+  body {
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  background-color: deeppink;
+}
+
+.lobby {
+  position: relative;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  /*termina mobile*/
+  /*empieza tablet*/
+}
+.lobby .titulo {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+}
+.lobby .titulo h1 {
+  font-size: h1;
+  font-size: 3rem;
+  color: h1;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 800;
+}
+@media (max-width: 992px) {
+  .lobby .titulo h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 556px) {
+  .lobby .titulo h1 {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+}
+.lobby .imgLobby {
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .lobby .imgLobby {
+    display: none;
+  }
+}
+.lobby .areaLinks {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .lobby .areaLinks {
+    display: none;
+  }
+}
+.lobby .areaLinks a {
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(255, 99, 71, 0);
+  font-size: 20px;
+}
+.lobby .areaLinks .botonAgenda {
+  top: 53%;
+  left: 8%;
+  width: 9%;
+  height: 24%;
+  transition: color 550ms;
+  transition: 550ms;
+}
+.lobby .areaLinks .botonAgenda:hover {
+  background: rgba(101, 40, 81, 0.419);
+  box-shadow: 0 0 10px rgba(101, 40, 81, 0.419), 0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+  transform: scale(1.3);
+}
+.lobby .areaLinks .botonSpeakers {
+  top: 53%;
+  left: 85.8%;
+  width: 10%;
+  height: 24%;
+  transition: color 550ms;
+  transition: 550ms;
+}
+.lobby .areaLinks .botonSpeakers:hover {
+  background: rgba(101, 40, 81, 0.419);
+  box-shadow: 0 0 10px rgba(101, 40, 81, 0.419), 0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+  transform: scale(1.3);
+}
+.lobby .areaLinks .botonAuditorio {
+  top: 39%;
+  left: 65.8%;
+  width: 23%;
+  height: 8%;
+  border-radius: 10px;
+  transition: color 550ms;
+  transition: 550ms;
+}
+.lobby .areaLinks .botonAuditorio:hover {
+  background: rgba(101, 40, 81, 0.419);
+  box-shadow: 0 0 10px rgba(101, 40, 81, 0.419), 0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+  transform: scale(1.3);
+}
+.lobby .areaLinks .botonStands {
+  top: 39%;
+  left: 10.8%;
+  width: 23%;
+  height: 8%;
+  border-radius: 10px;
+  transition: color 550ms;
+  transition: 550ms;
+}
+.lobby .areaLinks .botonStands:hover {
+  background: rgba(101, 40, 81, 0.419);
+  box-shadow: 0 0 10px rgba(101, 40, 81, 0.419), 0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+  transform: scale(1.3);
+}
+.lobby .areaLinks .botonInformes {
+  top: 76%;
+  left: 44%;
+  width: 30%;
+  height: 10%;
+  border-radius: 10px;
+  transition: color 550ms;
+  transition: 550ms;
+}
+.lobby .areaLinks .botonInformes:hover {
+  background: rgba(101, 40, 81, 0.419);
+  box-shadow: 0 0 10px rgba(101, 40, 81, 0.419), 0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+  transform: scale(1.3);
+}
+.lobby .btn-mobile {
+  margin: 0;
+  margin-top: 4rem;
+  padding-top: 10rem;
+  display: block;
+  text-align: center;
+}
+@media (min-width: 556px) {
+  .lobby .btn-mobile {
+    display: none;
+  }
+}
+.lobby .btn-mobile .btn-agenda {
+  position: relative;
+  display: block;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  transition: 0.2s;
+}
+.lobby .btn-mobile .btn-agenda:hover {
+  background: rgba(40, 40, 40, 0.8);
+  box-shadow: 0 0 5px rgba(40, 40, 40, 0.8), 0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+}
+.lobby .btn-mobile .btn-speakers {
+  position: relative;
+  display: block;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  transition: 0.2s;
+}
+.lobby .btn-mobile .btn-speakers:hover {
+  background: rgba(40, 40, 40, 0.8);
+  box-shadow: 0 0 5px rgba(40, 40, 40, 0.8), 0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+}
+.lobby .btn-mobile .btn-auditorio {
+  position: relative;
+  display: block;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  transition: 0.2s;
+}
+.lobby .btn-mobile .btn-auditorio:hover {
+  background: rgba(40, 40, 40, 0.8);
+  box-shadow: 0 0 5px rgba(40, 40, 40, 0.8), 0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+}
+.lobby .btn-mobile .btn-stands {
+  position: relative;
+  display: block;
+  padding: 10px 30px;
+  margin-bottom: 60px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  transition: 0.2s;
+}
+.lobby .btn-mobile .btn-stands:hover {
+  background: rgba(40, 40, 40, 0.8);
+  box-shadow: 0 0 5px rgba(40, 40, 40, 0.8), 0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+}
+.lobby .btn-tablet {
+  display: grid;
+  margin-top: 4rem;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20rem 20rem;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+}
+@media (max-width: 566px) {
+  .lobby .btn-tablet {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .lobby .btn-tablet {
+    display: none;
+  }
+}
+.lobby .btn-tablet i {
+  color: #fff;
+  font-size: 2.1rem;
+  transition: 1s;
+}
+.lobby .btn-tablet i:hover {
+  color: #000;
+  font-size: 2.2rem;
+}
+
+/*termina tablet*/
+/*footer*/
+.linksPie {
+  background-color: deeppink;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 6%;
+  position: fixed;
+}
+.linksPie a {
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: floralwhite;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.linksPie a img {
+  padding-left: 1rem;
+  width: 50px;
+  font-size: 1rem;
+}
+
+/*Comienzo de Agenda*/
+.fondoAgenda {
+  background-image: url(../scss/fondos/agenda.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+@media (max-width: 992px) {
+  .fondoAgenda {
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.fondoAgenda h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: h1;
+  font-size: 3rem;
+  color: h1;
+  color: white;
+}
+@media (max-width: 992px) {
+  .fondoAgenda h1 {
+    display: visible;
+  }
+}
+@media (max-width: 566px) {
+  .fondoAgenda h1 {
+    font-size: 2rem;
+  }
+}
+.fondoAgenda .agenda {
+  width: 70%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: textos;
+  color: textos;
+  text-align: textos;
+  background-color: textos;
+  border-radius: textos;
+  margin: auto;
+  color: white;
+  text-align: justify;
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 20px;
+}
+@media (max-width: 992px) {
+  .fondoAgenda .agenda {
+    width: 90%;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+@media (max-width: 566px) {
+  .fondoAgenda .agenda {
+    font-size: 1rem;
+  }
+}
+.fondoAgenda .gridAgenda {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3fr;
+  align-items: center;
+}
+.fondoAgenda .horario {
+  text-align: center;
+}
+
+/*Fin de Agenda*/
+/*empieza speakers*/
+.fondoSpeakers {
+  background-image: url(../scss/fondos/agenda.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+}
+@media (max-width: 992px) {
+  .fondoSpeakers {
+    padding-bottom: 10%;
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.fondoSpeakers h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: h1;
+  font-size: 3rem;
+  color: h1;
+  color: white;
+}
+@media (max-width: 566px) {
+  .fondoSpeakers h1 {
+    font-size: 2rem;
+  }
+}
+.fondoSpeakers .Speakers {
+  width: 80%;
+  margin: textos;
+  color: textos;
+  text-align: textos;
+  background-color: textos;
+  border-radius: textos;
+  margin: auto;
+  color: white;
+  text-align: justify;
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 20px;
+  padding: 1rem;
+}
+.fondoSpeakers .gridSpeakers {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: 200px 200px 200px 200px;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .fondoSpeakers .gridSpeakers {
+    display: block;
+  }
+}
+.fondoSpeakers .fotoSpeaker {
+  width: 150px;
+  margin-left: 1rem;
+  transition: 1s;
+}
+.fondoSpeakers .fotoSpeaker:hover {
+  transform: scale(1.3);
+}
+@media (max-width: 992px) {
+  .fondoSpeakers .fotoSpeaker {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 40%;
+    margin-right: 50%;
+  }
+}
+@media (max-width: 566px) {
+  .fondoSpeakers .fotoSpeaker {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 30%;
+    margin-right: 50%;
+  }
+}
+.fondoSpeakers .bio {
+  text-align: justify;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+@media (max-width: 566px) {
+  .fondoSpeakers .bio {
+    font-size: 1rem;
+  }
+}
+
+/*termina speakers*/
+/*empieza auditorio*/
+.fondoAuditorio {
+  background-image: url(../scss/fondos/agenda.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  padding-bottom: 5%;
+}
+@media (max-width: 992px) {
+  .fondoAuditorio {
+    padding-bottom: 10%;
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.fondoAuditorio h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: h1;
+  font-size: 3rem;
+  color: h1;
+  color: white;
+}
+@media (max-width: 566px) {
+  .fondoAuditorio h1 {
+    font-size: 2rem;
+  }
+}
+.fondoAuditorio .streaming {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 20px;
+  margin: auto;
+  padding: 1rem;
+}
+@media (max-width: 566px) {
+  .fondoAuditorio .streaming {
+    padding: 0.5rem;
+  }
+}
+.fondoAuditorio iframe {
+  width: 854px;
+  height: 480px;
+  margin: 0;
+}
+@media (max-width: 566px) {
+  .fondoAuditorio iframe {
+    width: 360px;
+    height: 240px;
+    margin: 0;
+  }
+}
+@media (min-width: 567px) {
+  .fondoAuditorio iframe {
+    width: 640px;
+    height: 360px;
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .fondoAuditorio iframe {
+    width: 854px;
+    height: 480px;
+    margin: 0;
+  }
+}
+
+/*termina auditorio*/
+/*Comienzo de Informes*/
+.fondoInformes {
+  background-image: url(../scss/fondos/agenda.jpg);
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 10%;
+}
+@media (max-width: 992px) {
+  .fondoInformes {
+    padding-bottom: 10%;
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.fondoInformes h1 {
+  font-size: h1;
+  font-size: 3rem;
+  color: h1;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .fondoInformes h1 {
+    display: visible;
+  }
+}
+@media (max-width: 566px) {
+  .fondoInformes h1 {
+    font-size: 2rem;
+  }
+}
+.fondoInformes .informes {
+  width: 70%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: textos;
+  color: textos;
+  text-align: textos;
+  background-color: textos;
+  border-radius: textos;
+  margin: auto;
+  color: white;
+  text-align: justify;
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 20px;
+}
+@media (max-width: 992px) {
+  .fondoInformes .informes {
+    width: 90%;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+@media (max-width: 566px) {
+  .fondoInformes .informes {
+    font-size: 1rem;
+  }
+}
+
+/*fin de informes*/
+/*Comienzo de Informes*/
+.fondoContacto {
+  background-image: url(../scss/fondos/agenda.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  padding-bottom: 10%;
+}
+@media (max-width: 992px) {
+  .fondoContacto {
+    padding-bottom: 10%;
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.fondoContacto h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: h1;
+  font-size: 3rem;
+  color: h1;
+  color: white;
+}
+@media (max-width: 992px) {
+  .fondoContacto h1 {
+    display: visible;
+  }
+}
+@media (max-width: 566px) {
+  .fondoContacto h1 {
+    font-size: 2rem;
+  }
+}
+.fondoContacto .formulario {
+  width: 60%;
+  padding: 1rem;
+  margin: auto;
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 20px;
+}
+@media (max-width: 992px) {
+  .fondoContacto .formulario {
+    width: 90%;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+.fondoContacto .formulario form .controls {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+}
+.fondoContacto .formulario .botons {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.fondoContacto .formulario .botons:hover {
+  background-color: deeppink;
+  cursor: pointer;
+}
+
+/*fin de contacto*/
+.fondo404 {
+  background-color: #121212 !important;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .fondo404 {
+    background: #121212 !important;
+  }
+}
+.fondo404 h1 {
+  font-family: "Nunito", sans-serif;
+  font-display: swap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 40vmax;
+  color: #282828;
+  letter-spacing: 0.025em;
+  margin: 0;
+  transition: 750ms ease-in-out;
+}
+@media (max-width: 992px) {
+  .fondo404 h1 {
+    font-size: 35vmax;
+  }
+}
+.fondo404 a {
+  font-family: "Nunito", sans-serif;
+  font-display: swap;
+  border: 2px solid #555;
+  padding: 0.5em 0.8em;
+  position: fixed;
+  z-index: 1;
+  color: #555;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 150ms;
+}
+.fondo404 a svg > polyline {
+  transition: 150ms;
+}
+.fondo404 a:hover {
+  color: #3d3d3d;
+  background: #dadada;
+  border-color: transparent;
+}
+.fondo404 a:hover svg > polyline {
+  stroke: #000;
+}
+.fondo404 a:hover + .color404 > h1 {
+  color: #dadada;
+}
+.fondo404 p {
+  font-family: "Nunito", sans-serif;
+  font-display: swap;
+  color: #dadada;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  margin: 0;
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

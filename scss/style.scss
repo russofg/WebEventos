@@ -1,0 +1,38 @@
+* {
+  font-family: "Nunito", sans-serif;
+  font-display: swap;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: deeppink;
+  @media (max-width: 992px) {
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+@import "base/condicion";
+@import "components/header";
+@import "components/seccion";
+@import "components/footer";
+@import "components/agenda";
+@import "components/speakers";
+@import "components/auditorio";
+@import "components/informes";
+@import "components/contacto";
+@import "components/404.scss";

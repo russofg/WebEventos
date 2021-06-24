@@ -1,0 +1,38 @@
+@mixin h1-size($sizeif) {
+  font-size: $sizeif;
+  @if $sizeif == h1 {
+    font-size: 1rem + 2;
+  } @else {
+    font-size: 1rem;
+  }
+}
+$red: rgb(210, 226, 255);
+@mixin h1-color($colorif) {
+  color: $colorif;
+  @if $colorif == h1 {
+    color: rgb(255, 255, 255);
+  } @else {
+    color: darken($red, 20%);
+  }
+}
+
+@mixin p-condicion($textoif) {
+  margin: $textoif;
+  color: $textoif;
+  text-align: $textoif;
+  background-color: $textoif;
+  border-radius: $textoif;
+  @if $textoif == textos {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 20px;
+  } @else {
+    margin: auto;
+    color: darken(white, 40%);
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 20px;
+  }
+}

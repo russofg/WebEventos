@@ -1,0 +1,235 @@
+.lobby {
+  position: relative;
+  min-width: 100%;
+
+  margin: 0;
+  padding: 0;
+  .titulo {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    h1 {
+      @include h1-size(h1);
+      @include h1-color(h1);
+      text-align: center;
+      margin-top: 3rem;
+      font-weight: 800;
+      @media (max-width: 992px) {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+      @media (max-width: 556px) {
+        font-size: 2rem;
+        padding: 2rem;
+      }
+    }
+  }
+  .imgLobby {
+    width: 100%;
+    margin: 0;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  .areaLinks {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 992px) {
+      display: none;
+    }
+    a {
+      position: absolute;
+      text-decoration: none;
+      text-align: center;
+      color: rgba(255, 99, 71, 0);
+      font-size: 20px;
+    }
+    .botonAgenda {
+      top: 53%;
+      left: 8%;
+      width: 9%;
+      height: 24%;
+      transition: color 550ms;
+      transition: 550ms;
+      &:hover {
+        background: rgba(101, 40, 81, 0.419);
+        box-shadow: 0 0 10px rgba(101, 40, 81, 0.419),
+          0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+        transform: scale(1.3);
+      }
+    }
+    .botonSpeakers {
+      top: 53%;
+      left: 85.8%;
+      width: 10%;
+      height: 24%;
+      transition: color 550ms;
+      transition: 550ms;
+      &:hover {
+        background: rgba(101, 40, 81, 0.419);
+        box-shadow: 0 0 10px rgba(101, 40, 81, 0.419),
+          0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+        transform: scale(1.3);
+      }
+    }
+    .botonAuditorio {
+      top: 39%;
+      left: 65.8%;
+      width: 23%;
+      height: 8%;
+      border-radius: 10px;
+      transition: color 550ms;
+      transition: 550ms;
+      &:hover {
+        background: rgba(101, 40, 81, 0.419);
+        box-shadow: 0 0 10px rgba(101, 40, 81, 0.419),
+          0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+        transform: scale(1.3);
+      }
+    }
+    .botonStands {
+      top: 39%;
+      left: 10.8%;
+      width: 23%;
+      height: 8%;
+      border-radius: 10px;
+      transition: color 550ms;
+      transition: 550ms;
+      &:hover {
+        background: rgba(101, 40, 81, 0.419);
+        box-shadow: 0 0 10px rgba(101, 40, 81, 0.419),
+          0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+        transform: scale(1.3);
+      }
+    }
+    .botonInformes {
+      top: 76%;
+      left: 44%;
+      width: 30%;
+      height: 10%;
+      border-radius: 10px;
+      transition: color 550ms;
+      transition: 550ms;
+      &:hover {
+        background: rgba(101, 40, 81, 0.419);
+        box-shadow: 0 0 10px rgba(101, 40, 81, 0.419),
+          0 0 40px rgba(101, 40, 81, 0.419), 0 0 80px rgba(101, 40, 81, 0.419);
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  .btn-mobile {
+    margin: 0;
+    margin-top: 4rem;
+    padding-top: 10rem;
+    display: block;
+    text-align: center;
+    @media (min-width: 556px) {
+      display: none;
+    }
+    .btn-agenda {
+      position: relative;
+      display: block;
+      padding: 10px 30px;
+      margin-bottom: 30px;
+      color: #fff;
+      letter-spacing: 4px;
+      text-decoration: none;
+      overflow: hidden;
+      font-size: 35px;
+      font-family: "Nunito", sans-serif;
+      transition: 0.2s;
+      &:hover {
+        background: rgba(40, 40, 40, 0.8);
+        box-shadow: 0 0 5px rgba(40, 40, 40, 0.8),
+          0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+      }
+    }
+    .btn-speakers {
+      position: relative;
+      display: block;
+      padding: 10px 30px;
+      margin-bottom: 30px;
+      color: #fff;
+      letter-spacing: 4px;
+      text-decoration: none;
+      overflow: hidden;
+      font-size: 35px;
+      font-family: "Nunito", sans-serif;
+      transition: 0.2s;
+      &:hover {
+        background: rgba(40, 40, 40, 0.8);
+        box-shadow: 0 0 5px rgba(40, 40, 40, 0.8),
+          0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+      }
+    }
+    .btn-auditorio {
+      position: relative;
+      display: block;
+      padding: 10px 30px;
+      margin-bottom: 30px;
+      color: #fff;
+      letter-spacing: 4px;
+      text-decoration: none;
+      overflow: hidden;
+      font-size: 35px;
+      font-family: "Nunito", sans-serif;
+      transition: 0.2s;
+      &:hover {
+        background: rgba(40, 40, 40, 0.8);
+        box-shadow: 0 0 5px rgba(40, 40, 40, 0.8),
+          0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+      }
+    }
+    .btn-stands {
+      position: relative;
+      display: block;
+      padding: 10px 30px;
+      margin-bottom: 60px;
+      color: #fff;
+      letter-spacing: 4px;
+      text-decoration: none;
+      overflow: hidden;
+      font-size: 35px;
+      font-family: "Nunito", sans-serif;
+      transition: 0.2s;
+      &:hover {
+        background: rgba(40, 40, 40, 0.8);
+        box-shadow: 0 0 5px rgba(40, 40, 40, 0.8),
+          0 0 20px rgba(40, 40, 40, 0.8), 0 0 30px rgba(40, 40, 40, 0.8);
+      }
+    }
+  }
+  /*termina mobile*/
+  /*empieza tablet*/
+  .btn-tablet {
+    @media (max-width: 566px) {
+      display: none;
+    }
+    @media (min-width: 992px) {
+      display: none;
+    }
+    display: grid;
+    margin-top: 4rem;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20rem 20rem;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    i {
+      color: #fff;
+      font-size: 2.1rem;
+      transition: 1s;
+      &:hover {
+        color: #000;
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+/*termina tablet*/

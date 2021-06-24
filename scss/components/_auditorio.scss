@@ -1,0 +1,72 @@
+/*empieza auditorio*/
+.fondoAuditorio {
+  background-image: url(../scss/fondos/agenda.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+
+  padding-bottom: 5%;
+  @media (max-width: 992px) {
+    padding-bottom: 10%;
+    background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
+    background-size: 200% 300vh;
+    background-repeat: no-repeat;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  h1 {
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include h1-size(h1);
+    @include h1-color(h1);
+
+    @media (max-width: 566px) {
+      font-size: 2rem;
+    }
+  }
+  .streaming {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 20px;
+    margin: auto;
+    padding: 1rem;
+    @media (max-width: 566px) {
+      padding: 0.5rem;
+    }
+  }
+  iframe {
+    width: 854px;
+    height: 480px;
+    margin: 0;
+    @media (max-width: 566px) {
+      width: 360px;
+      height: 240px;
+      margin: 0;
+    }
+    @media (min-width: 567px) {
+      width: 640px;
+      height: 360px;
+      margin: 0;
+    }
+    @media (min-width: 992px) {
+      width: 854px;
+      height: 480px;
+      margin: 0;
+    }
+  }
+}
+/*termina auditorio*/
