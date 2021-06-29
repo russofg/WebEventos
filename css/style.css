@@ -249,7 +249,7 @@ header {
   padding-right: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20rem 20rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   column-gap: 2rem;
 }
@@ -279,8 +279,8 @@ header {
   background-color: deeppink;
   bottom: 0;
   left: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -400,7 +400,7 @@ header {
   .fondoSpeakers {
     padding-bottom: 10%;
     background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
-    background-size: 300% 400vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     animation: gradient 15s ease infinite;
   }
@@ -444,6 +444,17 @@ header {
   background-color: rgba(40, 40, 40, 0.8);
   border-radius: 20px;
   padding: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .fondoSpeakers .Speakers {
+    display: block;
+  }
+}
+@media (max-width: 566px) {
+  .fondoSpeakers .Speakers {
+    margin-bottom: 3rem;
+  }
 }
 .fondoSpeakers .gridSpeakers {
   display: grid;
@@ -467,22 +478,18 @@ header {
 }
 @media (max-width: 992px) {
   .fondoSpeakers .fotoSpeaker {
-    /*margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 40%;
-    margin-right: 50%;*/
-    justify-content: center;
-  }
-  .fondoSpeakers .fotoSpeaker:hover {
-    display: none;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 566px) {
   .fondoSpeakers .fotoSpeaker {
+    display: block;
+    margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 30%;
-    margin-right: 50%;
   }
 }
 .fondoSpeakers .bio {
