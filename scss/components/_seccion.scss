@@ -215,22 +215,37 @@
     display: grid;
     margin-top: 4rem;
     padding-top: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20rem 20rem;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
-    i {
-      color: #fff;
-      font-size: 2.1rem;
-      transition: 1s;
-      &:hover {
-        color: #000;
-        font-size: 2.2rem;
-      }
+    .btn-agenda {
+      display: block;
+      margin: auto;
+    }
+    .btn-auditorio {
+      display: block;
+      margin: auto;
+    }
+    .btn-speakers {
+      display: block;
+      margin: auto;
+    }
+    .btn-stands {
+      display: block;
+      margin: auto;
+    }
+  }
+  i {
+    color: #fff;
+    font-size: 2.1rem;
+    transition: 1s;
+    &:hover {
+      color: #000;
+      font-size: 2.2rem;
     }
   }
 }
+
 /*termina tablet*/
