@@ -279,6 +279,8 @@ header {
   background-color: deeppink;
   bottom: 0;
   left: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -398,7 +400,7 @@ header {
   .fondoSpeakers {
     padding-bottom: 10%;
     background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
-    background-size: 200% 300vh;
+    background-size: 300% 400vh;
     background-repeat: no-repeat;
     animation: gradient 15s ease infinite;
   }
@@ -465,10 +467,14 @@ header {
 }
 @media (max-width: 992px) {
   .fondoSpeakers .fotoSpeaker {
-    margin-top: 2rem;
+    /*margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 40%;
-    margin-right: 50%;
+    margin-right: 50%;*/
+    justify-content: center;
+  }
+  .fondoSpeakers .fotoSpeaker:hover {
+    display: none;
   }
 }
 @media (max-width: 566px) {
