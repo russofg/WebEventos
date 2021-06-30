@@ -178,15 +178,28 @@
       <div class="fondoContacto">
         <h1>Contacto</h1>
         <div class="formulario">
-          <form method="GET">
+          <form action="enviar.php" method="POST" name="contact-form">
             <input
               class="controls"
               type="text"
+              id="name"
+              name="nombre"
               placeholder="Nombre y Apellido"
             />
-            <input class="controls" type="email" placeholder="E-mail" />
-            <textarea class="controls" placeholder="Consulta"></textarea>
-            <input class="botons" type="submit" />
+            <input
+              class="controls"
+              type="email"
+              id="mail"
+              name="email"
+              placeholder="E-mail"
+            />
+            <textarea
+              class="controls"
+              id="consulta"
+              name="consulta"
+              placeholder="Consulta"
+            ></textarea>
+            <input class="botons" type="submit" value="Enviar" />
           </form>
         </div>
       </div>
