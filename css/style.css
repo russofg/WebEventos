@@ -44,14 +44,31 @@ header {
 }
 .lobby .titulo {
   position: absolute;
-  width: 100%;
-  margin: 0;
+  left: 0;
+  right: 0;
+  top: 3rem;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  width: 700px;
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+@media (max-width: 992px) {
+  .lobby .titulo {
+    width: 100vw;
+  }
+}
+@media (max-width: 556px) {
+  .lobby .titulo {
+    width: 100vw;
+  }
 }
 .lobby .titulo .tituloPrincipal {
   color: #000;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 3rem;
+  font-size: 3rem;
+  text-align: left;
+  margin: auto;
   font-weight: 800;
   font-family: "Nunito", sans-serif;
 }
@@ -59,12 +76,73 @@ header {
   .lobby .titulo .tituloPrincipal {
     font-size: 2rem;
     margin-top: 1rem;
+    text-align: center;
+    margin: auto;
   }
 }
 @media (max-width: 556px) {
   .lobby .titulo .tituloPrincipal {
     font-size: 2rem;
-    padding: 2rem;
+    text-align: center;
+    margin: auto;
+  }
+}
+.lobby .titulo .palabras li {
+  list-style: none;
+  color: #000;
+  font-size: 3rem;
+  text-align: right;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .lobby .titulo .palabras li {
+    display: none;
+  }
+}
+@media (max-width: 556px) {
+  .lobby .titulo .palabras li {
+    display: none;
+  }
+}
+.lobby .titulo .palabras {
+  animation: cambiar 7s infinite;
+}
+@media (max-width: 992px) {
+  .lobby .titulo .palabras {
+    display: none;
+  }
+}
+@media (max-width: 556px) {
+  .lobby .titulo .palabras {
+    display: none;
+  }
+}
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -3.5rem;
+  }
+  40% {
+    margin-top: -3.5rem;
+  }
+  50% {
+    margin-top: -7rem;
+  }
+  70% {
+    margin-top: -7rem;
+  }
+  80% {
+    margin-top: -10.5rem;
+  }
+  100% {
+    margin-top: -10.5rem;
   }
 }
 .lobby .imgLobby {
@@ -293,8 +371,8 @@ header {
   background-color: deeppink;
   bottom: 0;
   left: 0;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
