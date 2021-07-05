@@ -12,6 +12,7 @@
     overflow: hidden;
     margin: auto;
     display: flex;
+    text-align: center;
     width: 700px;
     height: 3.5rem;
     line-height: 3.5rem;
@@ -24,9 +25,9 @@
     .tituloPrincipal {
       color: #000;
       font-size: 3rem;
-      text-align: left;
-      margin: auto;
-      font-weight: 800;
+      text-align: right;
+      margin: 0;
+      font-weight: 900;
       font-family: "Nunito", sans-serif;
       @media (max-width: 992px) {
         font-size: 2rem;
@@ -42,12 +43,12 @@
     }
     .palabras li {
       list-style: none;
-      color: #000;
-      font-size: 3rem;
-      text-align: right;
-      font-weight: 800;
+      color: deeppink;
+      font-size: 3.3rem;
+      text-align: left;
+      font-weight: 900;
       font-family: "Nunito", sans-serif;
-      margin: auto;
+      margin: 0;
       @media (max-width: 992px) {
         display: none;
       }

@@ -50,6 +50,7 @@ header {
   overflow: hidden;
   margin: auto;
   display: flex;
+  text-align: center;
   width: 700px;
   height: 3.5rem;
   line-height: 3.5rem;
@@ -67,9 +68,9 @@ header {
 .lobby .titulo .tituloPrincipal {
   color: #000;
   font-size: 3rem;
-  text-align: left;
-  margin: auto;
-  font-weight: 800;
+  text-align: right;
+  margin: 0;
+  font-weight: 900;
   font-family: "Nunito", sans-serif;
 }
 @media (max-width: 992px) {
@@ -89,12 +90,12 @@ header {
 }
 .lobby .titulo .palabras li {
   list-style: none;
-  color: #000;
-  font-size: 3rem;
-  text-align: right;
-  font-weight: 800;
+  color: deeppink;
+  font-size: 3.3rem;
+  text-align: left;
+  font-weight: 900;
   font-family: "Nunito", sans-serif;
-  margin: auto;
+  margin: 0;
 }
 @media (max-width: 992px) {
   .lobby .titulo .palabras li {
@@ -443,8 +444,10 @@ header {
 }
 .fondoAgenda .agenda {
   width: 70%;
-  margin-top: 4rem;
-  padding: 1rem;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 4rem;
   font-size: 1.5rem;
   margin: textos;
   color: textos;
@@ -471,7 +474,7 @@ header {
 }
 .fondoAgenda .gridAgenda {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 3fr;
   align-items: center;
 }
@@ -686,7 +689,7 @@ header {
   background-image: url(../scss/fondos/agenda.jpg);
   background-size: cover;
   width: 100%;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
 }
 @media (max-width: 992px) {
   .fondoInformes {
@@ -695,6 +698,11 @@ header {
     background-size: 200% 300vh;
     background-repeat: no-repeat;
     animation: gradient 15s ease infinite;
+  }
+}
+@media (max-width: 992px) and (max-width: 566px) {
+  .fondoInformes {
+    padding-bottom: 10%;
   }
 }
 @keyframes gradient {
@@ -731,6 +739,7 @@ header {
 .fondoInformes .informes {
   width: 70%;
   padding: 1rem;
+  font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
   margin: textos;
   color: textos;
@@ -753,6 +762,7 @@ header {
 @media (max-width: 566px) {
   .fondoInformes .informes {
     font-size: 1rem;
+    margin-bottom: 10%;
   }
 }
 

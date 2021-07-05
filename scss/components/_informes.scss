@@ -4,13 +4,16 @@
   background-image: url(../scss/fondos/agenda.jpg);
   background-size: cover;
   width: 100%;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
   @media (max-width: 992px) {
     padding-bottom: 10%;
     background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
     background-size: 200% 300vh;
     background-repeat: no-repeat;
     animation: gradient 15s ease infinite;
+    @media (max-width: 566px) {
+      padding-bottom: 10%;
+    }
   }
 
   @keyframes gradient {
@@ -42,6 +45,7 @@
   .informes {
     width: 70%;
     padding: 1rem;
+    font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
     @include p-condicion(textos);
     @media (max-width: 992px) {
@@ -51,6 +55,7 @@
     }
     @media (max-width: 566px) {
       font-size: 1rem;
+      margin-bottom: 10%;
     }
   }
 }

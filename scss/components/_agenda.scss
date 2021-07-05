@@ -38,8 +38,11 @@
   }
   .agenda {
     width: 70%;
-    margin-top: 4rem;
-    padding: 1rem;
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 4rem;
+
     font-size: 1.5rem;
     @include p-condicion(textos);
     @media (max-width: 992px) {
@@ -53,7 +56,7 @@
   }
   .gridAgenda {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr * 3;
     align-items: center;
   }
