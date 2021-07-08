@@ -851,6 +851,42 @@ header {
 }
 
 /*fin de contacto*/
+.fondoFeria {
+  background-image: url(../../img/feria.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.fondoFeria .fondoTexto {
+  transform: translateY(50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: deeppink;
+  border-radius: 20px;
+}
+@media (max-width: 556px) {
+  .fondoFeria .fondoTexto {
+    width: 80%;
+  }
+}
+.fondoFeria .fondoTexto .proximamente {
+  color: #000;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 556px) {
+  .fondoFeria .fondoTexto .proximamente {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+  }
+}
+
 .fondo404 {
   background-color: #121212 !important;
   position: relative;
