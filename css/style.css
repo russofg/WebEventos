@@ -605,8 +605,7 @@ header {
   background-image: url(../scss/fondos/agenda.jpg);
   background-size: cover;
   width: 100%;
-  height: 100%;
-  padding-bottom: 5%;
+  height: 90vh;
 }
 @media (max-width: 992px) {
   .fondoAuditorio {
@@ -631,7 +630,7 @@ header {
 .fondoAuditorio h1 {
   text-align: center;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 3rem;
   padding-bottom: 20px;
   font-size: h1;
   font-size: 3rem;
@@ -649,6 +648,7 @@ header {
   background-color: rgba(40, 40, 40, 0.8);
   border-radius: 20px;
   margin: auto;
+  margin-top: 3rem;
   padding: 1rem;
 }
 @media (max-width: 566px) {

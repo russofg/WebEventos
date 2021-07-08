@@ -3,8 +3,8 @@
   background-image: url(../scss/fondos/agenda.jpg);
   background-size: cover;
   width: 100%;
-  height: 100%;
-  padding-bottom: 5%;
+  height: 90vh;
+
   @media (max-width: 992px) {
     padding-bottom: 10%;
     background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
@@ -27,7 +27,7 @@
   h1 {
     text-align: center;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 3rem;
     padding-bottom: 20px;
     @include h1-size(h1);
     @include h1-color(h1);
@@ -42,7 +42,9 @@
     background-color: rgba(40, 40, 40, 0.8);
     border-radius: 20px;
     margin: auto;
+    margin-top: 3rem;
     padding: 1rem;
+
     @media (max-width: 566px) {
       padding: 0.5rem;
     }
