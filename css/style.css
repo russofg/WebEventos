@@ -423,10 +423,11 @@ header {
   }
 }
 .fondoAgenda h1 {
+  font-family: "Nunito", sans-serif;
   text-align: center;
   margin: auto;
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   font-size: h1;
   font-size: 3rem;
   color: h1;
@@ -444,11 +445,12 @@ header {
 }
 .fondoAgenda .agenda {
   width: 70%;
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 4rem;
   font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
   margin: textos;
   color: textos;
   text-align: textos;
@@ -470,6 +472,8 @@ header {
 @media (max-width: 566px) {
   .fondoAgenda .agenda {
     font-size: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
   }
 }
 .fondoAgenda .gridAgenda {
@@ -479,6 +483,7 @@ header {
   align-items: center;
 }
 .fondoAgenda .horario {
+  font-family: "Nunito", sans-serif;
   text-align: center;
 }
 
@@ -606,6 +611,7 @@ header {
   background-size: cover;
   width: 100%;
   height: 90vh;
+  padding-bottom: 5%;
 }
 @media (max-width: 992px) {
   .fondoAuditorio {
@@ -630,16 +636,18 @@ header {
 .fondoAuditorio h1 {
   text-align: center;
   margin: auto;
-  padding-top: 3rem;
+  padding-top: 20px;
   padding-bottom: 20px;
   font-size: h1;
   font-size: 3rem;
   color: h1;
   color: white;
 }
-@media (max-width: 566px) {
+@media (max-width: 566px), (max-width: 992px) {
   .fondoAuditorio h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 3rem;
   }
 }
 .fondoAuditorio .streaming {
@@ -648,12 +656,13 @@ header {
   background-color: rgba(40, 40, 40, 0.8);
   border-radius: 20px;
   margin: auto;
-  margin-top: 3rem;
   padding: 1rem;
 }
-@media (max-width: 566px) {
+@media (max-width: 566px), (max-width: 992px) {
   .fondoAuditorio .streaming {
     padding: 0.5rem;
+    margin: auto;
+    margin-top: 7rem;
   }
 }
 .fondoAuditorio iframe {
@@ -852,39 +861,29 @@ header {
 
 /*fin de contacto*/
 .fondoFeria {
-  background-image: url(../../img/feria.jpg);
+  background-image: url(../img/feria.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  display: flex;
 }
 .fondoFeria .fondoTexto {
-  transform: translateY(50%);
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+  margin: auto;
+  width: 600px;
+  height: 300px;
   background-color: deeppink;
   border-radius: 20px;
+  display: flex;
 }
-@media (max-width: 556px) {
-  .fondoFeria .fondoTexto {
-    width: 80%;
-  }
-}
-.fondoFeria .fondoTexto .proximamente {
+.fondoFeria .proximamente {
+  margin: auto;
+  text-align: center;
   color: #000;
   font-size: 3rem;
-  text-align: center;
   font-weight: 800;
   font-family: "Nunito", sans-serif;
-}
-@media (max-width: 556px) {
-  .fondoFeria .fondoTexto .proximamente {
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-  }
 }
 
 .fondo404 {

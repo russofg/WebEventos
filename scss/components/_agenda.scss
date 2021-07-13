@@ -23,10 +23,11 @@
     }
   }
   h1 {
+    font-family: "Nunito", sans-serif;
     text-align: center;
     margin: auto;
-    padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
     @include h1-size(h1);
     @include h1-color(h1);
     @media (max-width: 992px) {
@@ -38,12 +39,12 @@
   }
   .agenda {
     width: 70%;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 4rem;
-
     font-size: 1.5rem;
+    font-family: "Nunito", sans-serif;
     @include p-condicion(textos);
     @media (max-width: 992px) {
       width: 90%;
@@ -52,6 +53,8 @@
     }
     @media (max-width: 566px) {
       font-size: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 2rem;
     }
   }
   .gridAgenda {
@@ -62,6 +65,7 @@
   }
 
   .horario {
+    font-family: "Nunito", sans-serif;
     text-align: center;
   }
 }
