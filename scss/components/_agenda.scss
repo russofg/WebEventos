@@ -4,6 +4,9 @@
   background-size: cover;
   width: 100%;
   height: 90vh;
+  @media (max-width: 566px) {
+    margin-bottom: 4rem;
+  }
   @media (max-width: 992px) {
     background: linear-gradient(-45deg, #ee7752, deeppink, #23a6d5, #23d5ab);
     background-size: 200% 300vh;
@@ -26,8 +29,8 @@
     font-family: "Nunito", sans-serif;
     text-align: center;
     margin: auto;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     @include h1-size(h1);
     @include h1-color(h1);
     @media (max-width: 992px) {
@@ -35,13 +38,14 @@
     }
     @media (max-width: 566px) {
       font-size: 2rem;
+      padding-top: 2rem;
     }
   }
   .agenda {
     width: 70%;
-    margin-top: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-right: 4rem;
     font-size: 1.5rem;
     font-family: "Nunito", sans-serif;
@@ -55,7 +59,6 @@
       font-size: 1rem;
       padding-right: 1rem;
       padding-bottom: 1rem;
-      margin-bottom: 4rem;
     }
   }
   .gridAgenda {
